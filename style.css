@@ -5,6 +5,8 @@
 }
 html,body{
     font-family: 'Roboto', sans-serif;
+    background-image:url('justdoit.png');
+    background-size:cover;
   
 }
 .main{
@@ -60,20 +62,22 @@ html,body{
     height:100%;
     padding: 80px 100px;
     width:45%;
+    
 }
 .content-left p{
-    font-size:15px;
-    margin-bottom:30px;
-    width:90%;
-    font-weight:600;
-    color: rgba(255, 255, 255, 0.642);
+    font-size:12px;
+    margin-bottom:45px;
+    width:100%;
+    font-weight:550;
+    color: rgba(37, 37, 37, 0.326);
 }
 .content-left h5{
     font-weight:550;
-    margin-bottom:10px;
+    margin-bottom:6px;
     text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.943);
-    font-size:20px;
+    color:rgba(74, 27, 27, 0.573);
+    font-size:17px;
+    font-style: italic;
 }
 .content-right{
     height:100%;
@@ -90,12 +94,16 @@ html,body{
 .product{
     height:300px;
     width:250px;
-    background-color:rgba(169, 169, 169, 0.304);
+    background-color:rgba(245, 244, 244, 0.685);
     box-shadow: 0px 5px 10px rgba(17, 0, 17, 0.3);
     position:relative;
     margin-right:10px;
     display:inline-block;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+.product:hover{
+    transform:scale(1.1);
 }
 .product img{
     height:80%;
@@ -109,7 +117,8 @@ html,body{
     font-size:55px;
 }
 .content-left button{
-    background-color: black;
+    background-color: rgb(82, 15, 15);
+    box-shadow: 5px 5px 10px rgba(74, 0, 0, 0.3);
     color:rgba(255, 255, 255, 0.854);
     padding:10px 20px;
     font-weight:600;
@@ -154,6 +163,5 @@ html,body{
        height: 100%;
        object-fit: cover; 
    z-index: -1; 
-   filter: blur(10px); 
     transform: scale(1.1);
      }
